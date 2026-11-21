@@ -1,6 +1,6 @@
 # Capture Lens
 
-[GitHub repository](https://github.com/nastajus/capture-lens) · [Architecture](#architecture) · [Run locally](#run-locally) · [Roadmap](#roadmap)
+[Architecture](#architecture) · [Run locally](#run-locally) · [Roadmap](#roadmap)
 
 A Windows-first, local-first workspace for turning captured recordings into an organized, reviewable body of evidence. Capture Lens combines transcription, speaker diarization, thumbnails, processing controls, playback, and linked review without uploading personal source material to a hosted service.
 
