@@ -1,5 +1,9 @@
 # Capture Lens
 
+<p align="center">
+  <img src="docs/assets/img/capture-lens-badge.png" alt="Capture Lens badge: an optical lens inside a capture frame" width="280" />
+</p>
+
 [Architecture](#architecture) · [Run locally](#run-locally) · [Roadmap](#roadmap)
 
 A Windows-first, local-first workspace for turning captured recordings into an organized, reviewable body of evidence. Capture Lens combines transcription, speaker diarization, thumbnails, processing controls, playback, and linked review without uploading personal source material to a hosted service.
