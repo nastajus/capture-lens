@@ -37,6 +37,12 @@ The next direction is deliberately evidence-first rather than black-box analysis
 
 The queue design keeps the current phase, backlog, waiting work, retries, and attention states visible without reducing a multi-hour run to a spinner. The production dashboard includes live updates, persistent controls, a durable backlog feeder, per-job history, thumbnail modes, and storage safety pauses.
 
+### Long-run control plane
+
+![Sanitized long-run control capture](docs/assets/img/portfolio/long-run-control.png)
+
+A durable feeder can advance eligible work one item at a time while exposing scope, completion, retries, skipped items, failure hits, elapsed time, and an estimate grounded in recent completed jobs.
+
 ### Connected ingest roots
 
 ![Sanitized ingest-root status capture](docs/assets/img/portfolio/ingest-roots.png)
