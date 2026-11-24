@@ -37,6 +37,24 @@ The next direction is deliberately evidence-first rather than black-box analysis
 
 The queue design keeps the current phase, backlog, waiting work, retries, and attention states visible without reducing a multi-hour run to a spinner. The production dashboard includes live updates, persistent controls, a durable backlog feeder, per-job history, thumbnail modes, and storage safety pauses.
 
+### Connected ingest roots
+
+![Sanitized ingest-root status capture](docs/assets/img/portfolio/ingest-roots.png)
+
+Configured local roots expose their distinct roles: incoming source, tracked working library, and destination archive. The scanner can reconcile recordings after moves across those roots instead of silently treating a changed path as deletion.
+
+### Calendar-first inventory
+
+![Sanitized calendar inventory capture](docs/assets/img/portfolio/calendar-inventory.png)
+
+The daily intake view combines source-origin cues, thumbnail affordances, duration, transcript/diarization coverage, and direct drill-down into one compact inventory surface.
+
+### Lifetime and run history
+
+![Sanitized processing lifetime capture](docs/assets/img/portfolio/processing-lifetime.png)
+
+Lifetime metrics distinguish unique completed videos from individual jobs and failed attempts, while the recent-run list preserves operational context across long-running sessions.
+
 ### Collection pipeline
 
 ![Sanitized collection pipeline capture](docs/assets/img/portfolio/collection-pipeline.png)
