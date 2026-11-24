@@ -1,7 +1,7 @@
 # Capture Lens
 
 <p align="center">
-  <img src="docs/assets/img/capture-lens-badge.png" alt="Capture Lens badge: an optical lens inside a capture frame" width="280" />
+  <img src="docs/assets/img/capture-lens-badge.png" alt="Capture Lens badge: captured signals converging into a saved reference" width="280" />
 </p>
 
 [Architecture](#architecture) · [Run locally](#run-locally) · [Roadmap](#roadmap)
@@ -25,23 +25,29 @@ This is both a practical tool and a portfolio project: it combines a GPU-backed 
 
 ## Product Direction
 
-Capture Lens is designed around a simple premise: a transcript export is useful, but it is not yet a usable record of a long-running body of captured work or conversation. The current application makes individual recordings operational and reviewable; it also supports curated collection pages when a series needs more context than a raw transcript.
+Capture Lens is designed around a simple premise: a transcript export is useful, but it is not yet a usable record of a long-running body of captured work or conversation. The current application makes individual recordings operational and reviewable; it also supports collection views when a series needs more context than a raw transcript.
 
-The next direction is deliberately evidence-first rather than black-box analysis: make recurring ideas, decisions, concepts, difficulties, and visual references discoverable across recordings while retaining links back to the exact source moments. That future capability is planned as a reviewable layer over the local archive, not as an opaque replacement for it.
+The next direction is deliberately evidence-first rather than black-box analysis: make recurring ideas, decisions, concepts, difficulties, and visual references discoverable across recordings while retaining links back to the exact source moments. The current collection layouts establish that interaction model; a future reusable evidence layer would make it available without building a one-off page per collection.
 
 ## Screenshots
 
-### Long-running queue
+### Processing lifecycle
 
-![Sanitized queue-monitor capture](docs/assets/img/portfolio/queue-monitor.png)
+![Sanitized job lifecycle capture](docs/assets/img/portfolio/queue-lifecycle.png)
 
 The queue design keeps the current phase, backlog, waiting work, retries, and attention states visible without reducing a multi-hour run to a spinner. The production dashboard includes live updates, persistent controls, a durable backlog feeder, per-job history, thumbnail modes, and storage safety pauses.
 
-### Summary-first transcript reader
+### Collection pipeline
 
-![Sanitized transcript-reader capture](docs/assets/img/portfolio/transcript-reader.png)
+![Sanitized collection pipeline capture](docs/assets/img/portfolio/collection-pipeline.png)
 
-The review flow prioritizes summaries, readable sections, timestamps, and playback links before the raw transcript. The raw text remains an audit fallback rather than the primary interface.
+Collections can progress from source validation through transcript evidence and video-level guides to cross-recording synthesis. This staged design keeps higher-level observations grounded in inspectable source moments rather than treating a summary as the only artifact.
+
+### Cross-session concept evidence
+
+![Sanitized cross-session concept evidence map](docs/assets/img/portfolio/concept-evidence-map.png)
+
+Collection pages can present repeated concepts as a compact, time-aware map with direct links to the supporting paragraph, timestamp, and playback context. The review flow consistently prioritizes summaries, readable sections, timestamps, and playback links before the raw transcript, which remains an audit fallback.
 
 ## What It Does Today
 
@@ -81,11 +87,11 @@ The review flow prioritizes summaries, readable sections, timestamps, and playba
 - Supports speaker-aware presentation where diarization is available, while retaining uncertainty instead of treating speaker labels as ground truth.
 - Adds series navigation and specialized report renderers for selected collections when a generic transcript is not enough.
 
-### Curated analysis layers
+### Collection lenses
 
 - Supports collection-specific pages that layer summaries, topics, timestamp evidence, visual references, and specialized navigation above the base transcript reader.
 - Keeps those additions evidence-linked: summaries can point back to readable paragraphs, timestamped text, and local playback.
-- Treats these pages as curated extensions today. Cross-recording discovery is not yet a generic autonomous feature; see the roadmap for the proposed evidence-and-thread architecture.
+- Treats these pages as collection extensions today. Cross-recording discovery is not yet a generic autonomous feature; see the roadmap for the proposed evidence-and-thread architecture.
 
 ## Architecture
 
@@ -209,7 +215,7 @@ The following are intentional next steps, not claims of completed functionality:
 | Planned capability | Direction |
 | --- | --- |
 | Evidence graph and ThreadFinder | Normalize transcript segments into reusable evidence, index recurring terms and optional local semantic similarity, then surface reviewable cross-recording thread candidates with citations and confidence. |
-| Reusable collection lenses | Replace one-off collection renderers with configurable views for themes, decisions, concepts, difficulties, speakers, action items, and visual observations. |
+| Reusable collection lenses | Convert collection-specific renderers into configurable views for themes, decisions, concepts, difficulties, speakers, action items, and visual observations. |
 | Visual-first indexing | Add sampled-frame OCR and visual event extraction for screen-heavy recordings where spoken audio is not the primary evidence. |
 | Better semantic review | Generalize the series-specific summary/report adapters into a configurable evidence-model pipeline with explicit confidence. |
 | Deeper speaker attribution | Combine diarization, recurring topic context, and optional video-call active-speaker cues while preserving an uncertainty trail. |
