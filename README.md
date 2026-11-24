@@ -49,6 +49,18 @@ Collections can progress from source validation through transcript evidence and 
 
 Collection pages can present repeated concepts as a compact, time-aware map with direct links to the supporting paragraph, timestamp, and playback context. The review flow consistently prioritizes summaries, readable sections, timestamps, and playback links before the raw transcript, which remains an audit fallback.
 
+### Optional review layers
+
+![Sanitized enhancement catalog](docs/assets/img/portfolio/enhancement-catalog.png)
+
+The base reader remains deliberately small. Optional layers add readable paragraphs, timestamp evidence, in-place playback, visual references, speaker-aware views, and collection summaries only where they materially improve review.
+
+### Automated browser testing
+
+![Sanitized performance-testing report](docs/assets/img/portfolio/performance-testing.png)
+
+The project includes a browser-testing path for measuring route load, render cost, interaction latency, and regressions. This matters because a media archive can grow until an otherwise correct interface becomes hard to use.
+
 ## What It Does Today
 
 ### Ingest and inventory
