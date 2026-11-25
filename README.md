@@ -51,7 +51,7 @@ Configured local roots expose their distinct roles: incoming source, tracked wor
 
 ### Calendar-first inventory
 
-![Sanitized calendar inventory capture](docs/assets/img/portfolio/calendar-inventory.png)
+![Calendar-first inventory with source cues, transcript coverage, thumbnails, and preview excerpts](docs/assets/img/portfolio/calendar-inventory.png)
 
 The daily intake view combines source-origin cues, thumbnail affordances, duration, transcript/diarization coverage, and direct drill-down into one compact inventory surface.
 
