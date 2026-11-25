@@ -10,7 +10,7 @@ A Windows-first, local-first workspace for turning captured recordings into an o
 
 This is both a practical tool and a portfolio project: it combines a GPU-backed WhisperX workflow with an intentionally designed dashboard for operating long-running media jobs and revisiting their results. The application keeps source media and derived personal data local; the repository contains code, templates, and sanitized portfolio captures.
 
-> Screenshots below use synthetic labels and representative content. They do not contain local recordings, transcripts, source paths, or job history.
+> Screenshots use selected self-recorded Blender modelling sessions and sanitized dashboard views. Private conversations, local source paths, and operational job history are excluded.
 
 ## Portfolio Highlights
 
@@ -69,9 +69,21 @@ Collections can progress from source validation through transcript evidence and 
 
 ### Cross-session concept evidence
 
-![Sanitized cross-session concept evidence map](docs/assets/img/portfolio/concept-evidence-map.png)
+![Transcript breakdown with linked evidence and a curated collection sidebar](docs/assets/img/portfolio/nonlinear-transcript-evidence.png)
 
-Collection pages can present repeated concepts as a compact, time-aware map with direct links to the supporting paragraph, timestamp, and playback context. The review flow consistently prioritizes summaries, readable sections, timestamps, and playback links before the raw transcript, which remains an audit fallback.
+The Nonlinear Optics collection uses a self-recorded Blender modelling series to make scientific-visualisation work reviewable: compact summaries link to supporting transcript passages, timestamps, and playable moments. Purpose-specific collection lenses remain discoverable in the sidebar without making the base reader carry every specialized view. The related scientific work is available in a [separate portfolio section](https://nastajus.github.io/folio/#scientific).
+
+### In-context timestamp playback
+
+![Timestamp playback dialog showing the source Blender modelling moment and its transcript fragment](docs/assets/img/portfolio/nonlinear-timestamp-playback.png)
+
+A timestamp can open the recording directly at the cited moment while retaining the relevant transcript fragment beside the player. This closes the gap between a claim in a summary and the original visual and spoken context.
+
+### Moment-selection review
+
+![Curated nonlinear optics moment review cards with source links](docs/assets/img/portfolio/nonlinear-moment-review.png)
+
+For an editorial pass, collection-level moment cards can group candidate source moments by narrative role, then link back to the exact playback and transcript evidence. This is a reusable interaction pattern; the current implementation is collection-specific rather than an automated editing system.
 
 ### Optional review layers
 
