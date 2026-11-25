@@ -45,7 +45,7 @@ A durable feeder can advance eligible work one item at a time while exposing sco
 
 ### Connected ingest roots
 
-![Sanitized ingest-root status capture](docs/assets/img/portfolio/ingest-roots.png)
+<img src="docs/assets/img/portfolio/ingest-roots.png" alt="Sanitized ingest-root status capture" width="260" />
 
 Configured local roots expose their distinct roles: incoming source, tracked working library, and destination archive. The scanner can reconcile recordings after moves across those roots instead of silently treating a changed path as deletion.
 
