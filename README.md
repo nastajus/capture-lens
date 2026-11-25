@@ -118,6 +118,7 @@ The project includes a browser-testing path for measuring route load, render cos
 ### Review and playback
 
 - Provides direct local playback through the Node server, including HTTP Range handling for large media.
+- Uses a disposable, configurable compatibility-playback cache that can live on a larger local drive, removes stale interrupted conversions, and stays within a size cap through least-recently-used eviction.
 - Supports timestamp links, in-context playback dialogs, keyboard fullscreen, and retained playback position.
 - Provides readable transcript and timestamped views ahead of the raw transcript.
 - Supports speaker-aware presentation where diarization is available, while retaining uncertainty instead of treating speaker labels as ground truth.
