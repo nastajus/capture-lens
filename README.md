@@ -4,7 +4,7 @@
   <img src="docs/assets/img/capture-lens-badge.png" alt="Capture Lens badge: captured signals converging into a saved reference" width="280" />
 </p>
 
-[Architecture](#architecture) · [Run locally](#run-locally) · [Roadmap](#roadmap)
+[Architecture](#architecture) · [Technical setup](#technical-setup) · [Roadmap](#roadmap)
 
 A Windows-first, local-first workspace for turning captured recordings into an organized, reviewable body of evidence. Capture Lens combines transcription, speaker diarization, thumbnails, processing controls, playback, and linked review without uploading personal source material to a hosted service.
 
@@ -187,7 +187,7 @@ The dashboard is designed as a local read/control surface rather than a hosted t
 
 See `docs/pages/git-implementation.html` in a running local copy and `tools/audit-public-release.ps1` for the release-audit approach.
 
-## Run Locally
+## Technical Setup
 
 ### Prerequisites
 
