@@ -45,15 +45,15 @@ A durable feeder can advance eligible work one item at a time while exposing sco
 
 ### Queue console evolution
 
-**Before - 2026-11-27.** Live controls, a prospective backlog plan, and lifetime audit history competed for the same vertical flow.
+**Before - 2026-11-27.** The live plan stopped short of the available width, leaving a dead third column beside operational context.
 
 ![Before: long-run controls and lifetime history share one queue flow](docs/assets/img/portfolio/queue-console-before-2026-11-27.png)
 
-**After - 2026-11-27.** The operational view is a horizontal console: durable live state, active-item feedback, upcoming work, and stateful controls lead; processing history moves to a collapsed audit disclosure outside the live queue.
+**After - 2026-11-27.** The operational view is a full-width console: durable live state, active-item feedback, upcoming work, and stateful controls share the available horizontal space; processing history moves to a collapsed audit disclosure outside the live queue.
 
 ![After: horizontal long-run queue console with grouped failure display](docs/assets/img/portfolio/queue-console-after-2026-11-27.png)
 
-The failure mode selector now belongs to a labeled failure-display region and changes only the cards immediately below it. Compact mode supports rapid triage, details preserves error context, and thumbs provides a visual scan. The screenshots are sanitized, headless portfolio captures.
+The failure mode selector now belongs to a labeled failure-display region and changes only the cards immediately below it. Compact mode supports rapid triage, Preview adds thumbnails without expanding into full cards, Details preserves error context, and Thumbs provides a visual scan. The captures are headless dashboard renders with local thumbnail content intentionally retained.
 
 ### Connected ingest roots
 
@@ -297,7 +297,7 @@ The following are intentional next steps, not claims of completed functionality:
 
 ## Design Notes
 
-The [queue-console design note](docs/design-notes/queue-console.md) records the 2026-11-27 decision to separate live queue operation from lifetime audit history, with dated, sanitized before/after captures.
+The [design changes note](docs/design-notes/design-changes.md) records the 2026-11-27 queue decisions: separating live operation from lifetime audit history, using full-width live-plan space, and keeping failure triage dense but inspectable.
 
 ## Why This Exists
 
