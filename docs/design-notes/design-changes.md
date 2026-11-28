@@ -1,9 +1,13 @@
 # Design Changes
 
-**Decision date:** 2026-11-27  
-**Scope:** Long-run processing controls, queue visibility, failure triage, and processing-history placement.
+[Back to Capture Lens README](../../README.md)
+
+This page records dated interaction decisions and their evidence. The [main README](../../README.md) explains the product; this page explains why selected controls and layouts changed.
 
 ## Queue Console Design Note
+
+**Decision date:** 2026-11-27  
+**Scope:** Long-run processing controls, queue visibility, failure triage, and processing-history placement.
 
 ### Problem
 
@@ -62,3 +66,28 @@ Activity is communicated by text and state as well as restrained animation. The 
 ### Tradeoff
 
 Lifetime processing metrics are still relevant to the workspace, but they are not a command surface. Keeping them adjacent but collapsed retains discoverability without forcing operational users through an audit report on every queue visit.
+
+## Calendar Navigation Note
+
+**Decision date:** 2026-11-25  
+**Scope:** Moving between intake months and scanning day cards without losing context.
+
+### Problem
+
+The early calendar placed navigation in a simpler pager and made day-card coverage denser than the thumbnail-first inventory could comfortably support. Switching months was possible, but the controls did not clearly frame where the user was in the archive or make large date jumps feel deliberate.
+
+### Before - 2026-11-25
+
+![Earlier calendar inventory capture](../assets/img/portfolio/calendar-inventory-pre-2026-11-25.png)
+
+The earlier layout established the calendar-first inventory, but its pager and card density made large-scale navigation less legible.
+
+### After - 2026-11-25
+
+![Revised calendar inventory capture](../assets/img/portfolio/calendar-inventory.png)
+
+The revision separates first/previous and next/last controls around a centered month picker. Source cues, coverage pills, landscape thumbnails, and concise excerpts remain within each day card, so navigating the archive does not discard the information needed to decide what to open.
+
+### Decision
+
+Use the calendar as an inventory surface rather than a decorative date picker: navigation changes only the grid, preserves the current review context, and gives each card enough horizontal space for its media and processing state.

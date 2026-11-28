@@ -4,7 +4,7 @@
   <img src="docs/assets/img/capture-lens-badge.png" alt="Capture Lens badge: captured signals converging into a saved reference" width="280" />
 </p>
 
-[Architecture](#architecture) · [Design notes](#design-notes) · [Technical setup](#technical-setup) · [Roadmap](#roadmap)
+[Architecture](#architecture) · [Design changes](#design-changes) · [Technical setup](#technical-setup) · [Roadmap](#roadmap)
 
 A Windows-first, local-first workspace for turning captured recordings into an organized, reviewable body of evidence. Capture Lens combines transcription, speaker diarization, thumbnails, processing controls, playback, and linked review without uploading personal source material to a hosted service.
 
@@ -43,17 +43,7 @@ The queue design keeps the current phase, backlog, waiting work, retries, and at
 
 A durable feeder can advance eligible work one item at a time while exposing scope, completion, retries, skipped items, failure hits, elapsed time, and an estimate grounded in recent completed jobs.
 
-### Queue console evolution
-
-**Before - 2026-11-27.** The live plan stopped short of the available width, leaving a dead third column beside operational context.
-
-![Before: long-run controls and lifetime history share one queue flow](docs/assets/img/portfolio/queue-console-before-2026-11-27.png)
-
-**After - 2026-11-27.** The operational view is a full-width console: durable live state, active-item feedback, upcoming work, and stateful controls share the available horizontal space; processing history moves to a collapsed audit disclosure outside the live queue.
-
-![After: horizontal long-run queue console with grouped failure display](docs/assets/img/portfolio/queue-console-after-2026-11-27.png)
-
-The failure mode selector now belongs to a labeled failure-display region and changes only the cards immediately below it. Compact mode supports rapid triage, Preview adds thumbnails without expanding into full cards, Details preserves error context, and Thumbs provides a visual scan. The captures are headless dashboard renders with local thumbnail content intentionally retained.
+The failure region supports compact, thumbnail-assisted preview, detail, and visual-scan modes. See [Design Changes](docs/design-notes/design-changes.md#queue-console-design-note) for the dated queue-console decision record.
 
 ### Connected ingest roots
 
@@ -67,15 +57,7 @@ Configured local roots expose their distinct roles: incoming source, tracked wor
 
 The daily intake view combines source-origin cues, thumbnail affordances, duration, transcript/diarization coverage, and direct drill-down into one compact inventory surface.
 
-### Calendar navigation evolution
-
-**Earlier layout - 2026-11-25.** The initial calendar capture used a simpler pager and denser summary cards.
-
-![Earlier calendar inventory capture](docs/assets/img/portfolio/calendar-inventory-pre-2026-11-25.png)
-
-**Revised layout - 2026-11-25.** The revised inventory introduces separated first/previous and next/last controls, a centered month picker, source cues, and more legible card-level coverage.
-
-![Revised calendar inventory capture](docs/assets/img/portfolio/calendar-inventory.png)
+See [Design Changes](docs/design-notes/design-changes.md#calendar-navigation-note) for the dated calendar-navigation comparison.
 
 ### Lifetime and run history
 
@@ -295,9 +277,9 @@ The following are intentional next steps, not claims of completed functionality:
 | Public demonstration fixture | Provide a fully synthetic media/data fixture so the entire interface can be demonstrated and tested without local personal material. |
 | Accessibility hardening | Expand keyboard coverage, screen-reader labels, reduced-motion behavior, and automated visual regression tests. |
 
-## Design Notes
+## Design Changes
 
-The [design changes note](docs/design-notes/design-changes.md) records the 2026-11-27 queue decisions: separating live operation from lifetime audit history, using full-width live-plan space, and keeping failure triage dense but inspectable.
+The [Design Changes note](docs/design-notes/design-changes.md) documents dated interaction decisions and their before/after evidence without interrupting this capability-focused README.
 
 ## Why This Exists
 
