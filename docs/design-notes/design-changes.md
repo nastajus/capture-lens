@@ -36,7 +36,7 @@ This separates three terms that previously looked interchangeable:
 
 ![Before: long-run controls and audit history share one flow](../assets/img/portfolio/queue-console-before-2026-11-27.png)
 
-The long-run title, controls, plan, metric strip, and lifetime history competed for the same queue surface. The plan was also constrained to only part of the available width, leaving a visibly empty third column while operational context was compressed.
+The long-run title, controls, plan, metric strip, and lifetime history competed for the same queue surface. The plan was also constrained to only part of the available width, leaving a visibly empty third column while operational context was compressed. The capture replays those prior grid constraints against the same live queue state, so the before/after comparison remains directly comparable.
 
 ### After - 2026-11-27
 
