@@ -6,7 +6,7 @@ This page records dated interaction decisions and their evidence. The [main READ
 
 ## Queue Console Design Note
 
-**Decision date:** 2026-11-27  
+**Decision date:** 2026-11-27
 **Scope:** Long-run processing controls, queue visibility, failure triage, and processing-history placement.
 
 ### Problem
@@ -69,7 +69,7 @@ Lifetime processing metrics are still relevant to the workspace, but they are no
 
 ## Calendar Navigation Note
 
-**Decision date:** 2026-11-25  
+**Decision date:** 2026-11-25
 **Scope:** Moving between intake months and scanning day cards without losing context.
 
 ### Problem
